@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<constant name="struts.action.excludePattern" value="/static/.*" />
+   <constant name="struts.devMode" value="true" />     
+   <package name="jkxystudent" namespace="/" extends="struts-default">
+      <action name="addb" class="jkxystudent.Upload" method="execute">
+            <result name="success">/main.jsp</result>
+      </action>
+      
+      <action name="sear_auth" class="jkxystudent.search_author" method="execute">
+      		<result name="success">/search_author.jsp</result>
+      </action>
+      
+      <action name="sear_name" class="jkxystudent.search_name" method="execute">
+      		<result name="success">/search_name.jsp</result>
+      </action>
+      
+      <action name="delete" class="jkxystudent.delete" method="execute">
+      		<result name="success">/main.jsp</result>
+      </action>
+      
+      <action name="update" class="jkxystudent.update_book" method="execute">
+      		<result name="success">/main.jsp</result>
+      </action>
+   </package>
+   
+</struts>

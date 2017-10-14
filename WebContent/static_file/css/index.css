@@ -1,0 +1,154 @@
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #23262E;
+	position: fixed;
+	top: 0;
+}
+.l_logo{
+	height: 100%;
+	line-height: 60px;
+	padding-left: 30px;
+}
+.l_logo a{
+	/*display: block;*/
+	/*height: 100%;*/
+	color: #fff;
+	font-size: 20px;
+}
+/*.l_logo a span{
+	font-size: 30px;
+}*/
+.l_header_menu{
+	background-color: #23262E;
+}
+.layui-nav{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.layui-nav .l_pc{
+	display: inline-block;
+}
+.layui-nav .l_mobile{
+	display: none;
+}
+@media(max-width:720px) {
+	.layui-nav .l_pc{
+		display: none;
+	}
+	.layui-nav .l_mobile{
+		display: inline-block;
+		height: 60px;
+	}
+	.layui-nav .l_mobile .icon-bars{
+		color: #fff;
+	}
+}
+.l_side{
+	position: fixed;
+	overflow: hidden;
+	top: 60px;
+	left: 0;
+	bottom: 0;
+}
+.l_side .layui-side-scroll{
+	overflow-x: hidden;
+	/*overflow-y: scroll;*/
+	height: 100%;
+}
+.layui-nav-tree{
+	/*margin-top: 60px;*/
+}
+.layui-content{
+	position: absolute;
+	left: 200px;
+	top: 60px;
+	right: 0px;
+	/*bottom: 0px;
+	overflow: hidden;*/
+}
+.l_nav_child{
+	right: 0;
+	left: auto;
+}
+.layui-timeline{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+/*layui-content*/
+.l_user_msg{
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #777;
+}
+
+.layui-inner{
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+/*.layui-qrcode{
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+.layui-qrcode img{
+	width: 100%;
+	height: 100%;
+}*/
+.l_choosed_route{
+	padding: 5px 20px;
+}
+.l_taxation_event{
+	width: 200px;
+	height:240px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 2px #DDD;
+	position: relative;
+	cursor: pointer;
+}
+.l_event_img{
+	/*position: ;*/
+	width: 180px;
+	height: 150px;
+	margin-left: 10px;
+	margin-top: 10px;
+	/*text-align: center;*/
+	overflow: hidden;
+}
+.l_event_img img{
+	/*width: 100%;*/
+	height: 100%;
+	object-fit: cover;
+	margin: 0 auto;
+	transition: all 1s ease-in-out;
+	cursor: pointer;
+}
+.l_event_img img:hover{
+	transform: scale(1.2);
+}
+.l_event_district{
+	position: absolute;
+	top: 135px;
+	right: 10px;
+	background-color: #ddd;
+	width: 80px;
+	height: 25px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 25px;
+}
+.l_event_user{
+	width: 180px;
+	height: 20px;
+	margin: 10px 10px 0 10px;
+}
+.l_event_desc{
+	width: 180px;
+	height: 20px;
+	margin: 10px 10px 0 10px;
+	color: #666;
+}
